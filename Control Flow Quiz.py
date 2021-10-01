@@ -157,8 +157,7 @@ for year3, winr in winners.items():
 
 for year3, winr in winners.items():
     for winr_str in winr:
-        if winr_str in win_director:
-            win_director[winr_str] += 1
+        win_director[winr_str] += 1
 
 for name, n_win in win_director.items():
     tot_n_win.append(n_win)
@@ -168,7 +167,7 @@ tot_n_win.sort()
 n_most = tot_n_win.pop()
 
 for name, n_win in win_director.items():
-    if n_win == 4:
+    if n_win == n_most:
         most_win_director.append(name)
 
 print("most_win_director = {}".format(most_win_director))
