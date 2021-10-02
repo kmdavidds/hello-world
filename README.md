@@ -1,4 +1,2 @@
-# projects
-general
+# just general projects
 
-test
